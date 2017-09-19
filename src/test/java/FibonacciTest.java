@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
@@ -38,8 +40,8 @@ public class FibonacciTest
     public void throughArray() throws Exception
     {
         int[] array = fibonacci.throughArray(7);
-
-        Assertions.assertThat(array[array.length - 1]).isEqualTo(13);
+        System.out.println(Arrays.toString(array));
+        Assertions.assertThat(array[0]).isEqualTo(13);
     }
 
 }
